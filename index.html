@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <title>西濃名古屋エキスプレス労働組合</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="#">
+                    <span>西濃名古屋エキスプレス<br>労働組合</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <a href="#about" class="header__link">労働組合とは</a>
+                <a href="#news" class="header__link">おしらせ</a>
+                <a href="#contact" class="header__button button">お問い合わせ</a>
+            </nav>
+            <button id="js-drawer-icon" class="header__open drawer-icon">
+                <span class="drawer-icon__bar"></span>
+                <span class="drawer-icon__bar"></span>
+                <span class="drawer-icon__bar"></span>
+            </button>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <div id="js-drawer-content" class="drawer-content">
+        <nav class="drawer-content__menu">
+            <a href="#about" class="drawer-content__link">労働組合とは</a>
+            <a href="#news" class="drawer-content__link">おしらせ</a>
+            <div class="drawer-content__button">
+                <a href="#contact" class="button">お問い合わせ</a>
+            </div>
+        </nav>
+    </div>
+    <!-- /.drawer-content -->
+
+    <div class="mv">
+        <div class="mv__inner">
+            <div class="mv__content">
+                <div class="mv__content-img js-in-view fade-in">
+                    <img  src="./img/mv-img.jpg" alt="">
+                </div>
+                <div class="mv__contant-text">
+                    <p class="mv__lead">
+                        <span class="mv__lead1 js-in-view fade-in">組合員と家族のために、</span>
+                        <span class="mv__lead2 js-in-view fade-in">より良い明日を目指して。</span>
+                    </p>
+                    <!-- <p class="mv__description">こちらは<br>組合員専用の<br>ホームページです。</p> -->
+                    <!-- <div class="mv__button">
+                        <a href="#contact" class="button button--type2">アプリダウンロード</a>
+                    </div> -->
+                </div> 
+            </div>
+            <!-- <div class="mv__image"><img src="./img/mv-img.jpg" alt=""></div> -->
+        </div>
+    </div>
+    <!-- /.mv -->
+     <section id="news" class="news">
+        <div class="news__inner inner">
+            <div class="news__card">
+                <h2 class="news__title js-in-view fade-in-up">お知らせ</h2>
+                <div class="news__lists">
+                    <a href="" class="news__list news-link">
+                        <div class="news__link__meta">
+                            <time class="news__link__data" datetime="2023-1-7">2023年1月7日</time>
+                            <div class="news__link__label is-news">イベント情報</div>
+                        </div>
+                        <h3 class="news__link__title">冬季安全講習会、新年会の開催</h3>
+                    </a>
+                    <!-- <a href="" class="news__list news-link">
+                        <div class="news__link__meta">
+                            <time class="news__link__data" datetime="2022-12-10"></time>
+                            <div class="news__link__label is-column">コラム</div>
+                        </div>
+                        <h3 class="news__link__title">あの芸能人にも使っていただいていることが判明しました！もう嬉しすぎて頭が真っ白になってしまいましたが、続きは本文にて！</h3>
+                    </a>
+                    <a href="" class="news__list news-link">
+                        <div class="news__link__meta">
+                            <time class="news__link__data " datetime="2022-09-01">2022年9月1日</time>
+                            <div class="news__link__label is-event">イベント情報</div>
+                        </div>
+                        <h3 class="news__link__title">幕張メッセにて体験会を実施します！</h3>
+                    </a> -->
+                </div>
+                <div class="news__link"><a href="">もっとみる</a></div>
+            </div>
+        </div>
+     </section>
+     <!-- /.news -->
+     <div id="about" class="about">
+        <div class="about__inner">
+            <div class="about__title js-in-view fade-in-up">
+                <div class="heading">
+                    <h2 class="heading--en">労働組合とは</h2>
+                </div>
+            </div>
+            <div class="about__content">
+                <div class="about__image  js-in-view fade-in-left"><img src="./img/logo.jpg" alt=""></div>
+                <p class="about__text"></p>
+                <div class="about__pop">＼読んでね！／</div>
+                <div class="about__button"><button class="button js-modal-open">労働組合とは</button></div>
+            </div>
+        </div>
+     </div>
+
+     <dialog id="js-about-modal" class="about-modal">
+        <div class="about-modal__head">
+            <button class="about-modal__close-icon js-modal-close">
+                <img src="./img/close-icon.png" alt="モーダルを閉じる">
+            </button>
+        </div>
+        <div class="about-modal__body">
+            <div class="modal__title">西濃名古屋エキスプレス<br>労働組合とは</div>
+            <p class="modal__text">「会社の労働組合って結局、何をしているの？」と思うことはありませんか？ 労働組合は、実は私たちの職場生活に深く関わっています。では、具体的に何をしているのでしょうか。</p>
+            <p class="modal__text">労働組合の主な役割は、働く人々の権利と福祉を守ることです。これには、適切な給与、安全な労働環境、公正な労働条件の確保が含まれます。労働組合は、従業員と雇用主の間の橋渡し役として機能し、より良い労働環境を築く事を目指しています。</p>
+            <p>では、実際にはどのような活動をしているのでしょうか？</p>
+            <p><span>1.労使懇談会</span>年に4回開催し、会社の経営陣と直接対話します。この懇談会では、給与や労働条件の交渉、各支店が直面する問題や改善策の議論を行い、会社の方針と労働環境の向上を目指します。これは、社内で最も重要な会議の一つです。</p>
+            <p><span>2.定期大会、年次大会</span>年に一度開催され、組合の成果を振り返り、今後の目標を設定する場です。ここでは、分会員が一堂に会し、組合の方針や活動計画について議論します。また、組合運営の透明性を確保するために、財務報告や運営報告も行われます。組合員の意見や提案が直接反映されるため、組合の方針決定における民主的なプロセスが実現されます。</p>
+            <p><span>3.夏季、冬季安全講習会</span>夏と冬に、労使共催の安全教育プログラムを開催しています。夏季には、特に事故を起こした従業員と新入社員を対象に、安全教育を実施しています。<br>一方、冬季には、外部の専門講師を招き、全社員を対象に安全意識の向上を図っています。</p>
+            <p>他にも、各支店の問題点や現状を把握するために、定期的に支店訪問を行っています。さらに、社内フットサルチームを結成し、年に1回開催される西濃運輸労働組合主催の大会にも積極的に参加しています。</p>
+        </div>
+        <div class="about-modal__close-button">
+            <button class="button js-modal-close">閉じる</button>
+        </div>
+     </dialog>
+
+     <!-- /.about -->
+     <section class="movie">
+        <div class="movie__inner">
+            <div class="heading js-in-view fade-in-up">
+                <h2 class="heading--en">MOVIE</h2>
+                <div class="heading--ja">動画でわかる労働組合！</div>
+            </div>
+            <div class="movie__iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pipGyPknvOw?si=LO0DWLx9_Tufp3Z-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+     </section>
+     <!-- /.movie -->
+     
+     <div class="cta">
+        <div class="cta__inner inner">
+            <div class="cta__img js-in-view fade-in">
+                <img src="./img/logo.jpg" alt="">
+            </div>
+        </div>
+     </div>
+     <!-- /.cta -->
+
+     <section class="qa">
+        <div class="qa__inner inner">
+            <div class="qa__title js-in-view fade-in-up">
+                <div class="heading">
+                    <div class="heading--en">Q&A</div>
+                    <div class="heading--ja">よくあるご質問</div>
+                </div>
+            </div>
+            <div class="qa__boxes">
+                <div class="qa__box qa-box js-accordion">
+                    <button type="button" class="qa-box__head">
+                        <span class="qa-box__head-icon">Q</span>
+                        <span class="qa-box__head-text">組合員はなんにんいるんですか？</span>
+                    </button>
+                    <div class="qa-box__body" style="display: block">
+                        <div class="qa-box__a">
+                            <span class="qa-box__a-icon">A</span>
+                            <span class="qa-box__a-text">８９人です。<br>管理職、パート、工務を除いた全社員が組合員です。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa__box qa-box js-accordion">
+                    <button type="button" class="qa-box__head">
+                        <span class="qa-box__head-icon">Q</span>
+                        <span class="qa-box__head-text">組合の幹部は誰ですか？</span>
+                    </button>
+                    <div class="qa-box__body">
+                        <div class="qa-box__a">
+                            <span class="qa-box__a-icon">A</span>
+                            <span class="qa-box__a-text">組合幹部は委員長、書記長、会計、執行委員の４名で活動しております。<br>委員長：豊橋支店所属<br>田村　巌<br>書記長：知多支店所属<br>冨田　和雅<br>会計：一宮支店所属<br>西脇　徹<br>執行委員：大曽根支店所属<br>河合　浩司</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa__box qa-box js-accordion">
+                    <button type="button" class="qa-box__head">
+                        <span class="qa-box__head-icon">Q</span>
+                        <span class="qa-box__head-text">相談したいのですが、どこに連絡したらいいのですか？</span>
+                    </button>
+                    <div class="qa-box__body">
+                        <div class="qa-box__a">
+                            <span class="qa-box__a-icon">A </span>
+                            <span class="qa-box__a-text">お問い合わせフォームより必要事項を記載して相談内容の記入をして送信して頂ければ、後日執行委員から連絡しますので詳しい詳細をお聞かせください。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- /.qa -->
+
+     <section class="gallery">
+        <div class="gallery__inner inner">
+            <div class="gallery__title js-in-view fade-in-up">
+                <div class="heading">
+                    <div class="heading--en">GALLERY</div>
+                    <div class="heading--ja">ギャラリー</div>
+                </div>
+            </div>
+            <div class="gallery__slider">
+                <!-- Slider main container -->
+                <div id="js-gallery-swiper" class="swiper gallery__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー1.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークルの説明をする委員長。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー2.jpg" alt=""></div>
+                            <p class="gallery-card__text">真剣に取り組む様子。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー3.jpg" alt=""></div>
+                            <p class="gallery-card__text">カメラ目線の近藤君。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー4.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークルの発表の様子。</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div id="js-gallery-pagination" class="swiper-pagination gallery__pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div id="js-gallery-prev" class="swiper-button-prev gallery__prev"></div>
+                    <div id="js-gallery-next" class="swiper-button-next gallery__next"></div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- /.gallery -->
+
+     <section id="contact" class="contact">
+        <div class="contact__inner inner">
+            <div class="contact__box">
+                <div class="contact__title js-in-view fade-in-up">
+                    <div class="heading">
+                        <div class="heading--en">CONTACT</div>
+                        <div class="heading--ja">お問い合わせ</div>
+                    </div>
+                </div>
+                <form class="contact__form">
+                    <div class="contact__fields">
+                        <div class="contact__field">
+                            <div class="form-field">
+                                <div class="form-field__head">
+                                    <label for="your-name" class="form-field__label">お名前</label>
+                                    <span class="form-field__tag">必須</span>
+                                </div>
+                                <div class="form-field__item">
+                                    <input class="form-text" type="text" name="" id="your-name" placeholder="田中 おは次郎">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__field">
+                            <div class="form-field">
+                                <div class="form-field__head">
+                                    <label for="your-email" class="form-field__label">メールアドレス</label>
+                                    <span class="form-field__tag">必須</span>
+                                </div>
+                                <div class="form-field__item">
+                                    <input class="form-text" type="email" name="" id="your-email" placeholder="info@oha.com">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__field">
+                            <div class="form-field">
+                                <div class="form-field__head">
+                                    <label for="your-age" class="form-field__label">支店名</label>
+                                    <span class="form-field__tag ">必須</span>
+                                </div>
+                                <div class="form-field__item">
+                                    <select name="" id="your-age" class="form-select">
+                                        <option value="">選択してください</option>
+                                        <option value="">静岡</option>
+                                        <option value="">沼津</option>
+                                        <option value="">富士</option>
+                                        <option value="">藤枝</option>
+                                        <option value="">浜松</option>
+                                        <option value="">豊橋</option>
+                                        <option value="">豊川</option>
+                                        <option value="">岡崎</option>
+                                        <option value="">静岡</option>
+                                        <option value="">沼津</option>
+                                        <option value="">富士</option>
+                                        <option value="">藤枝</option>
+                                        <option value="">浜松</option>
+                                        <option value="">豊橋</option>
+                                        <option value="">豊川</option>
+                                        <option value="">岡崎</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__field">
+                            <div class="form-field">
+                                <div class="form-field__head">
+                                    <label for="your-message" class="form-field__label">お問い合わせ内容</label>
+                                    <span class="form-field__tag">必須</span>
+                                </div>
+                                <div class="form-field__item">
+                                    <textarea name="" id="your-message" class="form-textarea" placeholder="ここに文章を入力してくださいここに文章を入力してください" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__privacy">
+                        <label class="form-checkbox">
+                            <input
+                            class="form-checkbox__input"
+                            type="checkbox"
+                            name=""
+                            id=""
+                            />
+                            <span class="form-checkbox__text"><a href="" target="_blank">プライバシーポリシー</a>に同意する</span>
+                        </label>
+                    </div>
+                    <div class="contact__button">
+                        <!-- <input type="submit" value="送信する" class="button"> -->
+                        <button type="submit" class="button">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </section>
+     <!-- /.contact -->
+     <footer class="footer">
+        <div class="footer__inner inner">
+            <small class="footer__copyright">
+                COPYRIGHT 西濃名古屋エキスプレス労働組合
+            </small>
+        </div>
+     </footer>
+     <!-- /.footer -->
+
+     <a href="#" class="pagetop" id="js-pagetop">TOPへ<img src="./img/logo.jpg" alt=""></a>
+
+    <script src="./js/lib/swiper-bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
