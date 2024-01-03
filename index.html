@@ -104,7 +104,7 @@
             <div class="about__content">
                 <div class="about__image  js-in-view fade-in-left"><img src="./img/logo.jpg" alt=""></div>
                 <p class="about__text"></p>
-                <div class="about__pop">＼読んでね！／</div>
+                <div class="about__pop">＼押してね！／</div>
                 <div class="about__button"><button class="button js-modal-open">労働組合とは</button></div>
             </div>
         </div>
@@ -166,7 +166,7 @@
                 <div class="qa__box qa-box js-accordion">
                     <button type="button" class="qa-box__head">
                         <span class="qa-box__head-icon">Q</span>
-                        <span class="qa-box__head-text">組合員はなんにんいるんですか？</span>
+                        <span class="qa-box__head-text">組合員は、何人いるんですか？</span>
                     </button>
                     <div class="qa-box__body">
                         <div class="qa-box__a">
@@ -220,26 +220,44 @@
                     <!-- Slides -->
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery-card">
-                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー1.jpg" alt=""></div>
-                            <p class="gallery-card__text">QCサークルの説明をする委員長。</p>
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-1.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークルの説明をする田村委員長。</p>
                         </div>
                     </div>
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery-card">
-                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー2.jpg" alt=""></div>
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-2.jpg" alt=""></div>
                             <p class="gallery-card__text">真剣に取り組む様子。</p>
                         </div>
                     </div>
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery-card">
-                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー3.jpg" alt=""></div>
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-3.jpg" alt=""></div>
                             <p class="gallery-card__text">カメラ目線の近藤君。</p>
                         </div>
                     </div>
                     <div class="swiper-slide gallery__slide">
                         <div class="gallery-card">
-                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会ー4.jpg" alt=""></div>
-                            <p class="gallery-card__text">QCサークルの発表の様子。</p>
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-4.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークル発表。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-5.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークル発表。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-6.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークル発表。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery-card">
+                            <div class="gallery-card__image"><img src="./img/令和5年夏季安全講習会-7.jpg" alt=""></div>
+                            <p class="gallery-card__text">QCサークル。</p>
                         </div>
                     </div>
                     </div>
@@ -263,7 +281,7 @@
                         <div class="heading--ja">お問い合わせ</div>
                     </div>
                 </div>
-                <form class="contact__form">
+                <form id="form" class="contact__form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe0JDiViCo7_S9TiXICLsE4A8a7GLdxuB-Glr1PqiYqoABNUA/formResponse" method="post">
                     <div class="contact__fields">
                         <div class="contact__field">
                             <div class="form-field">
@@ -272,7 +290,18 @@
                                     <span class="form-field__tag">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <input class="form-text" type="text" name="" id="your-name" placeholder="田中 カン次郎">
+                                    <input class="form-text" type="text" name="entry.173694279" id="your-name" placeholder="田中 カン次郎">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__field">
+                            <div class="form-field">
+                                <div class="form-field__head">
+                                    <label for="your-name" class="form-field__label">連絡先</label>
+                                    <span class="form-field__tag">必須</span>
+                                </div>
+                                <div class="form-field__item">
+                                    <input type="tel" id="phone" class="form-text" name="entry.226350395" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="123-4567-8900">
                                 </div>
                             </div>
                         </div>
@@ -283,7 +312,7 @@
                                     <span class="form-field__tag">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <input class="form-text" type="email" name="" id="your-email" placeholder="info@gmail.com">
+                                    <input class="form-text" type="email" name="entry.354741850" id="your-email" placeholder="info@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -294,29 +323,7 @@
                                     <span class="form-field__tag ">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <select name="" id="your-age" class="form-select">
-                                        <option value="">選択してください</option>
-                                        <option value="numazu">沼津支店</option>
-                                        <option value="fuji">富士支店</option>
-                                        <option value="shizuoka">静岡支店</option>
-                                        <option value="fujieda">藤枝支店</option>
-                                        <option value="hamamatsu">浜松支店</option>
-                                        <option value="obu">大府支店</option>
-                                        <option value="okazaki">岡崎支店</option>
-                                        <option value="taketoyo">武豊支店</option>
-                                        <option value="toyokawa">豊川支店</option>
-                                        <option value="toyohashi">豊橋支店</option>
-                                        <option value="kasadera">笠寺支店</option>
-                                        <option value="nagoya-east">名古屋東支店</option>
-                                        <option value="nagoya">名古屋支店</option>
-                                        <option value="nagoya-west">名古屋西支店</option>
-                                        <option value="ozonen">大曽根支店</option>
-                                        <option value="tsushima">津島支店</option>
-                                        <option value="biwajima">枇杷島支店</option>
-                                        <option value="komaki">小牧支店</option>
-                                        <option value="ichinomiya">一宮支店</option>
-                                        <option value="yokkaichi">四日市支店</option>
-                                    </select>
+                                    <input class="form-text" type="text" name="entry.944887664" id="age" placeholder="ーー支店">
                                 </div>
                             </div>
                         </div>
@@ -327,7 +334,7 @@
                                     <span class="form-field__tag">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <textarea name="" id="your-message" class="form-textarea" placeholder="ここに文章を入力してください" cols="30" rows="10"></textarea>
+                                    <textarea name="entry.1782389250" id="your-message" class="form-textarea" placeholder="ここに文章を入力してください" cols="30" rows="10"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -336,6 +343,9 @@
                         <button id="submit-button" type="submit" class="button" disabled>送信する</button>
                     </div>
                 </form>
+                <div class="end-message">
+                    <p>お問い合わせありがとうございました。</p>
+                </div>
             </div>
         </div>
      </section>

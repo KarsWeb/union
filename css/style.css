@@ -1603,3 +1603,13 @@ body {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.end-message {
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+.end-message p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}

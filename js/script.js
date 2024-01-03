@@ -186,3 +186,31 @@ document.addEventListener("DOMContentLoaded", function() {
     updateButtonState(); // 初期状態でボタンの状態を更新
 });
 
+// ---------------------------------------
+// お問い合わせ完了メッセージを出す
+// document.addEventListener('DOMContentLoaded', function() {
+
+$(document).ready(function () {
+
+    $('#form').submit(function (event) {
+      var formData = $('#form').serialize();
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe0JDiViCo7_S9TiXICLsE4A8a7GLdxuB-Glr1PqiYqoABNUA/formResponse",
+        data: formData,
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function () {
+            $(".end-message").slideDown();
+            $(".submit-btn").fadeOut();
+            //window.location.href = "thanks.html";
+          },
+          200: function () {
+            $(".false-message").slideDown();
+          }
+        }
+      });
+      event.preventDefault();
+    });
+
+  });
