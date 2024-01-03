@@ -22,6 +22,7 @@
                     <span>西濃名古屋エキスプレス<br>労働組合</span>
                 </a>
             </h1>
+
             <nav class="header__nav">
                 <a href="#about" class="header__link">労働組合とは</a>
                 <a href="#news" class="header__link">おしらせ</a>
@@ -38,8 +39,12 @@
 
     <div id="js-drawer-content" class="drawer-content">
         <nav class="drawer-content__menu">
-            <a href="#about" class="drawer-content__link">労働組合とは</a>
             <a href="#news" class="drawer-content__link">おしらせ</a>
+            <a href="#about" class="drawer-content__link">労働組合とは</a>
+            <a href="#movie" class="drawer-content__link">MOVIE</a>
+            <a href="#qa" class="drawer-content__link">Q&A</a>
+            <a href="#gallery" class="drawer-content__link">GALLERY
+            </a>
             <div class="drawer-content__button">
                 <a href="#contact" class="button">お問い合わせ</a>
             </div>
@@ -58,13 +63,8 @@
                         <span class="mv__lead1 js-in-view fade-in">組合員と家族のために、</span>
                         <span class="mv__lead2 js-in-view fade-in">より良い明日を目指して。</span>
                     </p>
-                    <!-- <p class="mv__description">こちらは<br>組合員専用の<br>ホームページです。</p> -->
-                    <!-- <div class="mv__button">
-                        <a href="#contact" class="button button--type2">アプリダウンロード</a>
-                    </div> -->
-                </div> 
+                </div>
             </div>
-            <!-- <div class="mv__image"><img src="./img/mv-img.jpg" alt=""></div> -->
         </div>
     </div>
     <!-- /.mv -->
@@ -75,25 +75,18 @@
                 <div class="news__lists">
                     <a href="" class="news__list news-link">
                         <div class="news__link__meta">
+                            <time class="news__link__data" datetime="2023-10-16">2023年10月16日</time>
+                            <div class="news__link__label is-event">募集</div>
+                        </div>
+                        <h3 class="news__link__title">フットサルメンバー募集の案内</h3>
+                    </a>
+                    <a href="" class="news__list news-link">
+                        <div class="news__link__meta">
                             <time class="news__link__data" datetime="2023-1-7">2023年1月7日</time>
                             <div class="news__link__label is-news">イベント情報</div>
                         </div>
                         <h3 class="news__link__title">冬季安全講習会、新年会の開催</h3>
                     </a>
-                    <!-- <a href="" class="news__list news-link">
-                        <div class="news__link__meta">
-                            <time class="news__link__data" datetime="2022-12-10"></time>
-                            <div class="news__link__label is-column">コラム</div>
-                        </div>
-                        <h3 class="news__link__title">あの芸能人にも使っていただいていることが判明しました！もう嬉しすぎて頭が真っ白になってしまいましたが、続きは本文にて！</h3>
-                    </a>
-                    <a href="" class="news__list news-link">
-                        <div class="news__link__meta">
-                            <time class="news__link__data " datetime="2022-09-01">2022年9月1日</time>
-                            <div class="news__link__label is-event">イベント情報</div>
-                        </div>
-                        <h3 class="news__link__title">幕張メッセにて体験会を実施します！</h3>
-                    </a> -->
                 </div>
                 <div class="news__link"><a href="">もっとみる</a></div>
             </div>
@@ -138,7 +131,7 @@
      </dialog>
 
      <!-- /.about -->
-     <section class="movie">
+     <section id="movie" class="movie">
         <div class="movie__inner">
             <div class="heading js-in-view fade-in-up">
                 <h2 class="heading--en">MOVIE</h2>
@@ -160,7 +153,7 @@
      </div>
      <!-- /.cta -->
 
-     <section class="qa">
+     <section id="qa" class="qa">
         <div class="qa__inner inner">
             <div class="qa__title js-in-view fade-in-up">
                 <div class="heading">
@@ -174,7 +167,7 @@
                         <span class="qa-box__head-icon">Q</span>
                         <span class="qa-box__head-text">組合員はなんにんいるんですか？</span>
                     </button>
-                    <div class="qa-box__body" style="display: block">
+                    <div class="qa-box__body">
                         <div class="qa-box__a">
                             <span class="qa-box__a-icon">A</span>
                             <span class="qa-box__a-text">８９人です。<br>管理職、パート、工務を除いた全社員が組合員です。</span>
@@ -189,19 +182,19 @@
                     <div class="qa-box__body">
                         <div class="qa-box__a">
                             <span class="qa-box__a-icon">A</span>
-                            <span class="qa-box__a-text">組合幹部は委員長、書記長、会計、執行委員の４名で活動しております。<br>委員長：豊橋支店所属<br>田村　巌<br>書記長：知多支店所属<br>冨田　和雅<br>会計：一宮支店所属<br>西脇　徹<br>執行委員：大曽根支店所属<br>河合　浩司</span>
+                            <span class="qa-box__a-text">組合幹部は以下の4名で構成されております。<br><br>委員長：豊橋支店所属<br>田村　巌<br><br>書記長：知多支店所属<br>冨田　和雅<br><br>会計：一宮支店所属<br>西脇　徹<br><br>執行委員：大曽根支店所属<br>河合　浩司<br><br>この４名は各支店のリーダーであり通常はみなさんと同じ集配業務を行っています。</span>
                         </div>
                     </div>
                 </div>
                 <div class="qa__box qa-box js-accordion">
                     <button type="button" class="qa-box__head">
                         <span class="qa-box__head-icon">Q</span>
-                        <span class="qa-box__head-text">相談したいのですが、どこに連絡したらいいのですか？</span>
+                        <span class="qa-box__head-text">相談したいのですが、どこに連絡すればよいですか？</span>
                     </button>
                     <div class="qa-box__body">
                         <div class="qa-box__a">
                             <span class="qa-box__a-icon">A </span>
-                            <span class="qa-box__a-text">お問い合わせフォームより必要事項を記載して相談内容の記入をして送信して頂ければ、後日執行委員から連絡しますので詳しい詳細をお聞かせください。</span>
+                            <span class="qa-box__a-text">相談はお問い合わせフォームをご利用ください。<br>必要事項を記入し、相談内容を詳細にご記入の上、送信してください。送信いただいた内容は執行委員が確認し、後日ご連絡させていただきます。詳しい情報をお待ちしております。</span>
                         </div>
                     </div>
                 </div>
@@ -210,7 +203,7 @@
      </section>
      <!-- /.qa -->
 
-     <section class="gallery">
+     <section id="gallery" class="gallery">
         <div class="gallery__inner inner">
             <div class="gallery__title js-in-view fade-in-up">
                 <div class="heading">
@@ -260,7 +253,6 @@
         </div>
      </section>
      <!-- /.gallery -->
-
      <section id="contact" class="contact">
         <div class="contact__inner inner">
             <div class="contact__box">
@@ -279,7 +271,7 @@
                                     <span class="form-field__tag">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <input class="form-text" type="text" name="" id="your-name" placeholder="田中 おは次郎">
+                                    <input class="form-text" type="text" name="" id="your-name" placeholder="田中 カン次郎">
                                 </div>
                             </div>
                         </div>
@@ -290,11 +282,10 @@
                                     <span class="form-field__tag">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <input class="form-text" type="email" name="" id="your-email" placeholder="info@oha.com">
+                                    <input class="form-text" type="email" name="" id="your-email" placeholder="info@gmail.com">
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="contact__field">
                             <div class="form-field">
                                 <div class="form-field__head">
@@ -304,22 +295,26 @@
                                 <div class="form-field__item">
                                     <select name="" id="your-age" class="form-select">
                                         <option value="">選択してください</option>
-                                        <option value="">静岡</option>
-                                        <option value="">沼津</option>
-                                        <option value="">富士</option>
-                                        <option value="">藤枝</option>
-                                        <option value="">浜松</option>
-                                        <option value="">豊橋</option>
-                                        <option value="">豊川</option>
-                                        <option value="">岡崎</option>
-                                        <option value="">静岡</option>
-                                        <option value="">沼津</option>
-                                        <option value="">富士</option>
-                                        <option value="">藤枝</option>
-                                        <option value="">浜松</option>
-                                        <option value="">豊橋</option>
-                                        <option value="">豊川</option>
-                                        <option value="">岡崎</option>
+                                        <option value="numazu">沼津支店</option>
+                                        <option value="fuji">富士支店</option>
+                                        <option value="shizuoka">静岡支店</option>
+                                        <option value="fujieda">藤枝支店</option>
+                                        <option value="hamamatsu">浜松支店</option>
+                                        <option value="obu">大府支店</option>
+                                        <option value="okazaki">岡崎支店</option>
+                                        <option value="taketoyo">武豊支店</option>
+                                        <option value="toyokawa">豊川支店</option>
+                                        <option value="toyohashi">豊橋支店</option>
+                                        <option value="kasadera">笠寺支店</option>
+                                        <option value="nagoya-east">名古屋東支店</option>
+                                        <option value="nagoya">名古屋支店</option>
+                                        <option value="nagoya-west">名古屋西支店</option>
+                                        <option value="ozonen">大曽根支店</option>
+                                        <option value="tsushima">津島支店</option>
+                                        <option value="biwajima">枇杷島支店</option>
+                                        <option value="komaki">小牧支店</option>
+                                        <option value="ichinomiya">一宮支店</option>
+                                        <option value="yokkaichi">四日市支店</option>
                                     </select>
                                 </div>
                             </div>
@@ -331,25 +326,13 @@
                                     <span class="form-field__tag">必須</span>
                                 </div>
                                 <div class="form-field__item">
-                                    <textarea name="" id="your-message" class="form-textarea" placeholder="ここに文章を入力してくださいここに文章を入力してください" cols="30" rows="10"></textarea>
+                                    <textarea name="" id="your-message" class="form-textarea" placeholder="ここに文章を入力してください" cols="30" rows="10"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contact__privacy">
-                        <label class="form-checkbox">
-                            <input
-                            class="form-checkbox__input"
-                            type="checkbox"
-                            name=""
-                            id=""
-                            />
-                            <span class="form-checkbox__text"><a href="" target="_blank">プライバシーポリシー</a>に同意する</span>
-                        </label>
-                    </div>
                     <div class="contact__button">
-                        <!-- <input type="submit" value="送信する" class="button"> -->
-                        <button type="submit" class="button">送信する</button>
+                        <button id="submit-button" type="submit" class="button" disabled>送信する</button>
                     </div>
                 </form>
             </div>
@@ -365,7 +348,7 @@
      </footer>
      <!-- /.footer -->
 
-     <a href="#" class="pagetop" id="js-pagetop">TOPへ<img src="./img/logo.jpg" alt=""></a>
+     <a href="#" class="pagetop" id="js-page-top">TOPへ<img src="./img/logo.jpg" alt=""></a>
 
     <script src="./js/lib/swiper-bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
